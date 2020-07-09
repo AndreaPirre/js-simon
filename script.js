@@ -20,6 +20,8 @@ for (var i = 0; i < 5; i++) {
     listaNumCasuali.push(numCasuale);
 }
 console.log(listaNumCasuali);
+// creo un alert che mi stampa i 5 numeri che l'utente deve ricordare
+ alert("Ciao Utente! Metti alla prova la tua memoria, prova a memeorizzare questi numeri: " + listaNumCasuali);
 
 });
 
