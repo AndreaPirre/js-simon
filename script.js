@@ -20,9 +20,25 @@ for (var i = 0; i < 5; i++) {
     listaNumCasuali.push(numCasuale);
 }
 console.log(listaNumCasuali);
+
 // creo un alert che mi stampa i 5 numeri che l'utente deve ricordare
  alert("Ciao Utente! Metti alla prova la tua memoria, prova a memeorizzare questi numeri: " + listaNumCasuali);
 
+// ora devo impostare un timer che duri 30 secondi
+
+setTimeout(function() {
+    for (var i = 0; i < 5; i++) {
+      numPrompt = parseInt(prompt("Ora prova ad inserire i numeri he ricordi: "));
+      for (var f = 0; f < listaNumCasuali.length; f++) {
+        if (numPrompt == listaNumCasuali[f]) {
+          listaNumPrompt.push(numPrompt);
+        }
+      }
+
+    }
+    alert("Hai indovinato " + listaNumPrompt.length + " numeri. Esattamente i numeri: " + listaNumPrompt)
+    console.log(listaNumPrompt)
+  }, 3000)
 });
 
 
