@@ -11,4 +11,21 @@ var listaNumPrompt = [];
 var numCasuale;
 var numPrompt;
 
+// devo creare un ciclo che mi crei numeri 5 random
+
+for (var i = 0; i < 5; i++) {
+    numCasuale = generaNumeri(1, 100);
+    console.log(numCasuale);
+    // attraverso un push aggiungo il numero casuale generato nell'array dei numeri listaNumCasuali
+    listaNumCasuali.push(numCasuale);
+}
+
 });
+
+
+// FUNCTION
+// mi creo una funzione che mi genera nimeri listaNumCasuali
+
+function generaNumeri(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
