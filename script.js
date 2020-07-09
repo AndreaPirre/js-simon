@@ -28,7 +28,7 @@ console.log(listaNumCasuali);
 
 setTimeout(function() {
     for (var i = 0; i < 5; i++) {
-      numPrompt = parseInt(prompt("Ora prova ad inserire i numeri he ricordi: "));
+      numPrompt = parseInt(prompt("Ora prova ad inserire i numeri che ricordi: "));
       for (var f = 0; f < listaNumCasuali.length; f++) {
         if (numPrompt == listaNumCasuali[f]) {
           listaNumPrompt.push(numPrompt);
@@ -38,7 +38,7 @@ setTimeout(function() {
     }
     alert("Hai indovinato " + listaNumPrompt.length + " numeri. Esattamente i numeri: " + listaNumPrompt)
     console.log(listaNumPrompt)
-  }, 3000)
+}, 30000)
 });
 
 
