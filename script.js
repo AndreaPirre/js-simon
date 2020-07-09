@@ -19,6 +19,7 @@ for (var i = 0; i < 5; i++) {
     // attraverso un push aggiungo il numero casuale generato nell'array dei numeri listaNumCasuali
     listaNumCasuali.push(numCasuale);
 }
+console.log(listaNumCasuali);
 
 });
 
